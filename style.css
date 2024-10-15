@@ -1,0 +1,63 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.login-box
+{
+  background: transparent;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5));
+  background-size: 100% 100px;
+  background-position: 0% 100%;
+  transition: background-position 0.5s;
+    width: 50%;
+    backdrop-filter: blur(5px);
+    max-width: 400px;
+    border: 2px solid gray;
+    border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+  transform: perspective(500px) translateZ(20px);
+  transition: transform 0.5s;
+}
+login-box:hover {
+  background-position: 100% 100%;
+  transform: perspective(500px) translateZ(30px) scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4), 0 0 40px rgba(0, 0, 0, 0.6);
+}
+.login-box .user-box label {
+  transition: 0.3s; /* add transition effect */
+}
+
+.login-box .user-box input:focus + label {
+  top: -20px;
+  left: 0;
+  color: #f403d4;
+  font-size: 12px;
+}
+
+.login-box .user-box input:focus + label {
+  top: -20px;
+  left: 0;
+  color: #f403d4;
+  font-size: 12px;
+}
+
+.container
+{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100vh;
+  height: 100vh;
+  overflow: hidden;
+}
+.main-container{
+    font-size: 40px;
+    color: #f403b8;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: 0.8s;
+    text-shadow: 0 0 10px #f403b8, 0 0 20px #f403b8, 0 0 30px #f403b8;
+}
